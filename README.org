@@ -1,0 +1,24 @@
+* First test of the org readme
+This is a sub heading (followed by spacing)
+
+- some points
+  - sub level
+    - sub sub level
+  - sub level 2
+** Notes
+   I'm following the https://tutorial.djangogirls.org/en/deploy/ tutorial.
+   - test [[https://tutorial.djangogirls.org/en/deploy/][hyperlink]]
+** Deploying
+   Deploying a web app on pythonAnyweher invovelves pulling code from GitHub and configuring Python Anywhere to recognise it and serve it as a web app.
+   There are manual ways of doing this, but PythonAnywhere provides a helper tool:
+   pip install --user pythonanywhere
+   pa_autoconfigure_django.py https://github.com/<github-username>/app.git
+   
+   it does the following:
+   downloads Github code
+   creates virtualenv
+   updates settings file with some deployment settings
+   sets up database using the manage.py migrate command
+   sets up static files
+   configures PythonAnywhere to serve the web app via its API
+   
