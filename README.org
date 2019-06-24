@@ -21,4 +21,21 @@ This is a sub heading (followed by spacing)
    sets up database using the manage.py migrate command
    sets up static files
    configures PythonAnywhere to serve the web app via its API
-   
+** Testing
+- To create the database run:
+#+begin_src bash
+python manage.py migrate
+#+end_src
+start the web server with the following command. 
+#+begin_src bash
+python manage.py runserver
+#+end_src
+
+- To pull any new code into PythonAnywhere: 
+  - open up PythonAnywhere consoles page
+  - open or start new bash console
+  - run:
+#+begin_src bash
+cd ~/<my-pythonanywhere-domain>.pythonanywhere.com
+git pull
+#+end_src
