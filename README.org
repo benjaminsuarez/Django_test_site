@@ -26,7 +26,7 @@ This is a sub heading (followed by spacing)
 #+begin_src bash
 python manage.py migrate
 #+end_src
-start the web server with the following command. 
+- start the web server with the following command. 
 #+begin_src bash
 python manage.py runserver
 #+end_src
@@ -38,4 +38,9 @@ python manage.py runserver
 #+begin_src bash
 cd ~/<my-pythonanywhere-domain>.pythonanywhere.com
 git pull
+#+end_src
+
+- open shell with:
+#+begin_src bash
+python manage.py shell
 #+end_src
